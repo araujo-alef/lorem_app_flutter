@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
           Column(
             children: [
               Container(
-                height: height * 56,
+                height: height * 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/images/back_top.png'),
@@ -20,6 +20,18 @@ class HomePage extends StatelessWidget {
                   )
                 ),
               ),
+              Container(
+                height: height * 34,
+              ),
+              Container(
+                height: height * 16,
+                decoration:  BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/back_bottom.png'),
+                    fit: BoxFit.fill
+                  )
+                ),
+              )
             ],
           ),
         ],
