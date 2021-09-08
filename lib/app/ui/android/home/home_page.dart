@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,14 +14,14 @@ class HomePage extends StatelessWidget {
           Column(
             children: [
               Container(
-                height: height * 50,
+                height: height * 42,
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage('assets/images/back_top.png'),
                         fit: BoxFit.fill)),
               ),
               Container(
-                height: height * 32,
+                height: height * 40,
                 child: Stack(
                   children: [
                     Positioned(
@@ -77,7 +78,7 @@ class HomePage extends StatelessWidget {
                     width: width * 36,
                     height: height * 7.2,
                     child: ElevatedButton(
-                    onPressed: (){},
+                    onPressed: () => Get.toNamed('/login'),
                     child: Text(
                         'Get Started',
                         style: GoogleFonts.nunito(
@@ -96,28 +97,6 @@ class HomePage extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(5))
                     ),
                   ), 
-
-                  /* Container(
-                    width: width * 36,
-                    height: height * 7.2,
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                      ),
-                      onPressed: () {},
-                      child: Text(
-                        'Get Started',
-                        style: GoogleFonts.nunito(
-                          color: Colors.white,
-                          fontSize: 28,
-                          wordSpacing: 0.5
-                        ),
-                      ),
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(width: 1.5, color: Colors.white),
-                      borderRadius: BorderRadius.all(Radius.circular(5))
-                    ),
-                  ), */
                 ),
               )
             ],
