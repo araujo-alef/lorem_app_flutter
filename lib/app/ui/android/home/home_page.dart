@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
     final width = (MediaQuery.of(context).size.width / 100);
 
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           Column(
@@ -41,7 +42,7 @@ class HomePage extends StatelessWidget {
                       child: Text(
                         'Lorem',
                         style: GoogleFonts.nunito(
-                            fontSize: 42,
+                            fontSize: height * 4,
                             color: Color(0XBF2F80ED)),
                       ),
                     ),
@@ -51,7 +52,7 @@ class HomePage extends StatelessWidget {
                       child: Text(
                         'consequat duis\nenim velit ',
                         style: GoogleFonts.nunito(
-                            fontSize: 26,
+                            fontSize: height * 2.5,
                             fontWeight: FontWeight.w300,
                             color: Color(0XBF2F80ED)),
                       ),
@@ -83,7 +84,7 @@ class HomePage extends StatelessWidget {
                         'Get Started',
                         style: GoogleFonts.nunito(
                           color: Colors.white,
-                          fontSize: 25,
+                          fontSize: height * 2.4,
                           wordSpacing: 0.5
                         ),
                       ),
