@@ -38,7 +38,84 @@ class RegisterPage extends StatelessWidget {
               height: height * 36,
               child: Padding(
                 padding: const EdgeInsets.only(left: 30, right: 80),
-                
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      height: height * 3.5,
+                    ),
+                    Text('Full Name',
+                        style: GoogleFonts.nunito(
+                            fontSize: height * 1.6, color: Color(0Xff2F80ED))),
+                    SizedBox(
+                      height: height * 0.8,
+                    ),
+                    SizedBox(
+                      height: height * 5.5,
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10))),
+                          disabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Color(0Xff2F80ED))),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Color(0Xff2F80ED)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10))),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: height * 1.2),
+                    Text('Email',
+                        style: GoogleFonts.nunito(
+                            fontSize: height * 1.6, color: Color(0Xff2F80ED))),
+                    SizedBox(
+                      height: height * 0.8,
+                    ),
+                    SizedBox(
+                      height: height * 5.5,
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10))),
+                          disabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Color(0Xff2F80ED))),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Color(0Xff2F80ED)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10))),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: height * 2.4),
+                    Text('Password',
+                        style: GoogleFonts.nunito(
+                            fontSize: height * 1.6, color: Color(0Xff2F80ED))),
+                    SizedBox(
+                      height: height * 1,
+                    ),
+                    SizedBox(
+                      height: height * 5.5,
+                      child: TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10))),
+                          disabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Color(0Xff2F80ED))),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Color(0Xff2F80ED)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10))),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: height * 2,),
+                  ],
+                ),
               ),
             ),
             Container(
@@ -143,7 +220,7 @@ class RegisterPage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(bottom: 12),
+                                padding: const EdgeInsets.only(bottom: 14),
                                 child: Container(
                                   child: TextButton(
                                     onPressed: () { Get.toNamed('/login'); },
