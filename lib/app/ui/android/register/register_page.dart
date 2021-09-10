@@ -75,7 +75,23 @@ class RegisterPage extends StatelessWidget {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.only(bottom: 12),
-                                
+                                child: Container(
+                                  child: TextButton(
+                                    onPressed: () { Get.toNamed('/login'); },
+                                    child: RichText(
+                                      text: TextSpan(
+                                        style: GoogleFonts.nunito(
+                                          fontSize: height * 1.7,
+                                          color: Colors.white
+                                        ),
+                                        children: [
+                                          TextSpan(text: 'Already Member?' ),
+                                          TextSpan(text: ' Login', style: TextStyle(fontWeight: FontWeight.bold))
+                                        ]
+                                      ),
+                                    ),
+                                  )
+                                ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(
