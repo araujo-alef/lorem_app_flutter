@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginPage extends StatelessWidget {
+class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final height = (MediaQuery.of(context).size.height / 100);
@@ -27,7 +26,7 @@ class LoginPage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Login',
+                    Text('Register',
                         style: GoogleFonts.nunito(
                             fontSize: height * 4,
                             fontWeight: FontWeight.bold,
@@ -186,35 +185,28 @@ class LoginPage extends StatelessWidget {
                       image: AssetImage('assets/images/back_bottom.png'),
                       fit: BoxFit.fill)),
               child: Padding(
-                padding: const EdgeInsets.only(left: 30),
+                padding: const EdgeInsets.only(left: 30, bottom: 28,),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 16),
-                      child: Container(
-                        child: TextButton(
-                          onPressed: () { Get.toNamed('/register'); },
-                          child: RichText(
-                            text: TextSpan(
-                              style: GoogleFonts.nunito(
-                                fontSize: height * 1.7,
-                                color: Colors.white
-                              ),
-                              children: [
-                                TextSpan(text: 'New Here?' ),
-                                TextSpan(text: ' Register', style: TextStyle(fontWeight: FontWeight.bold))
-                              ]
-                            ),
+                    Container(
+                      child: RichText(
+                        text: TextSpan(
+                          style: GoogleFonts.nunito(
+                            fontSize: height * 1.7,
+                            color: Colors.white
                           ),
-                        )
-                      ),
+                          children: [
+                            TextSpan(text: 'New Here?' ),
+                            TextSpan(text: ' Register', style: TextStyle(fontWeight: FontWeight.bold))
+                          ]
+                        ),
+                      )
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
                         right: 36,
-                        bottom: 28,
                       ),
                       child: Container(
                         width: width * 32,
