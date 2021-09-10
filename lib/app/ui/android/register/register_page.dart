@@ -53,7 +53,76 @@ class RegisterPage extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 30, top: 6),
                       child: Container(
                           height: height * 6,
-                          
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                width: width * 11,
+                                height: height * 5.5,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                                  color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black26,
+                                      blurRadius: 10
+                                    )
+                                  ]
+                                ),
+                                child: TextButton(
+                                    onPressed: () {},
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 3, bottom: 3),
+                                      child: Image(image: AssetImage('assets/images/google_logo.png')),
+                                    ),
+                                ),
+                              ),
+                              SizedBox(width: width * 3.5,),
+                              Container(
+                                width: width * 11,
+                                height: height * 5.5,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                                  color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black26,
+                                      blurRadius: 10
+                                    )
+                                  ]
+                                ),
+                                child: TextButton(
+                                    onPressed: () {},
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(2.0),
+                                      child: Image(image: AssetImage('assets/images/fb_logo.png')),
+                                    ),
+                                ),
+                              ),
+                              SizedBox(width: width * 3.5,),
+                              Container(
+                                width: width * 11,
+                                height: height * 5.5,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                                  color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black26,
+                                      blurRadius: 10
+                                    )
+                                  ]
+                                ),
+                                child: TextButton(
+                                    onPressed: () {},
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 2, bottom: 6, left: 4, right: 4),
+                                      child: Image(image: AssetImage('assets/images/apple_logo.png')),
+                                    ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                     ),
                     Positioned(
